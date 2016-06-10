@@ -1292,6 +1292,9 @@ header .active {
   .login-popup form, .register-popup form {
     padding: 0 !important;
   }
+  .profile-popup form {
+    padding-top: 25px !important;
+  }
   .register-popup {
     height: 395px;
   }
