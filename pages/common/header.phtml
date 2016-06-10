@@ -15,16 +15,53 @@
     <link href="/<?php echo $this->config->rootDir; ?>/<?php echo $this->system; ?>/view/<?php echo $this->config->template; ?>/css/screen.css" rel="stylesheet">
 
     <!-- 3rd-party CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <!-- JQuery -->
     <script src="/<?php echo $this->config->rootDir; ?>/<?php echo $this->system; ?>/view/<?php echo $this->config->template; ?>/js/3rd-party/jquery.min.js"></script>
 
     <!-- 3rd-party JS files -->
+    <script src="/<?php echo $this->config->rootDir; ?>/<?php echo $this->system; ?>/view/<?php echo $this->config->template; ?>/js/3rd-party/parallax.min.js"></script>
     
     <!-- Main JS file -->
     <script src="/<?php echo $this->config->rootDir; ?>/<?php echo $this->system; ?>/view/<?php echo $this->config->template; ?>/js/main.js"></script>
 </head>
 <body>
 <!--[if lt IE 9]>
-    <p class="browserupgrade"><strong>Elavult</strong> böngészőt használsz. Kérlek <a href="http://browsehappy.com/">tölts le</a> újabb böngészőt, az optimális böngészés érdekében.</p>
+    <p class="browserupgrade"><strong>Elavult</strong> böngészőt használsz. Kérem <a href="http://browsehappy.com/">tölts le</a> újabb böngészőt, az optimális böngészés érdekében.</p>
 <![endif]-->
+<!--[if lt IE 10]>
+    <link href="/<?php echo $this->config->rootDir; ?>/<?php echo $this->system; ?>/view/<?php echo $this->config->template; ?>/css/ie9fix.css" rel="stylesheet">
+<![endif]-->
+<div class="anchor-wrapper">
+<a name="profil"></a>
+<a name="regisztracio"></a>
+<a name="belepes"></a>
+</div>
+<header>
+    <div class="container">
+        <div class="profile">
+            <a href="#belepes" class="login">Belépés</a>
+            <a href="#" class="logout is-hidden">Kilépés</a>
+        </div>
+        <div class="logos clear">
+            <a href="#" class="spar-logo"></a>
+            <a href="#" class="redbull-race-logo"></a>
+        </div>
+        <h1>Nyeremény<span>játék</span></h1>
+        <button class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#nyeremenyjatek">Nyereményjáték</a></li>
+                <li><a href="#termekek">Termékek</a></li>
+                <li><a href="#blokkfeltoltes">Blokkfeltöltés</a></li>
+                <li><a href="#">Játékszabály</a></li>
+                <li><a href="#profil" class="profile">Profil</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

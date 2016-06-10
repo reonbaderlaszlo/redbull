@@ -1,0 +1,115 @@
+header {
+    position: relative;
+
+    .container > .profile {
+        width: 340px;
+        max-width: 100%;
+        height: 15px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 42px;
+        line-height: 15px;
+        background: url("../images/header/member-icon.png") no-repeat center left;
+        background-size: auto 15px;
+
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 700;
+            padding-left: 20px;
+        }
+    }
+
+    .mobile-menu {
+        width: 30px;
+        height: 21px;
+        margin: 20px auto;
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 155px;       
+
+        span {
+            background-color: #fff;
+            width: 100%;
+            height: 3px;
+            margin-bottom: 6px;
+            display: block;
+            transform: scale(1);
+            @include transition-all;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &.active{
+            background: url('../images/header/close.png') no-repeat center;
+            background-size: auto 21px;
+            span{
+                transform: scale(0);
+            }
+        }
+    }
+
+    .logos {
+        width: 340px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        a {
+            display: block;
+        }
+    }
+
+    .spar-logo {
+        width: 160px;
+        height: 25px;
+        background: url("../images/header/spar-logo.png") no-repeat center;
+        background-size: contain;
+        float: left;
+        margin-top: 79px;
+    }
+
+    .redbull-race-logo {
+        width: 163px;
+        height: 79px;
+        background: url("../images/header/redbull-race-logo.png") no-repeat center;
+        background-size: contain;
+        float: right;
+        margin-top: 25px;
+    }
+
+    nav {
+        max-width: 100%;
+        margin: 20px auto 23px;
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 33px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+
+            @include transition-all;
+
+            &:hover {
+                color: #fec700;
+            }
+        }
+    }
+
+    .active {
+        color: #fec700;
+    }
+}

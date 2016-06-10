@@ -1,14 +1,294 @@
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {}
+@media only screen and (max-width: 1366px) {
+    .parallax-1 h2 {
+        padding: 0;
+    }
+}
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {}
+@media only screen and (max-width: 1279px) {
+    .countdown:after {
+        right: -80%;
+    }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {}
+    .countdown:before {
+        left: -80%;
+    }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 1024px) {}
+    .countdown {
+        background-position: center right 50px;
+    }
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1280px) {}
+    .tutorial .container {
+        padding: 0 55px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .countdown:after {
+        right: -95%;
+    }
+
+    .countdown:before {
+        left: -95%;
+    }
+
+    .countdown {
+        background-position: center right 0;
+    }
+
+    .tutorial .container {
+        padding: 0 10px;
+    }
+
+    .tutorial .blokk, .tutorial .tutorial-wrapper {
+        float: none;
+    }
+
+    .tutorial .blokk {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .tutorial .tutorial-wrapper {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .parallax-1 h2 {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding-top: 50px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .parallax-1, .parallax-2 {
+        min-height: 320px;
+        padding: 0 10px;
+    }
+
+    .parallax-2 h2 {
+        font-size: 28px;
+        line-height: 34px;
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .countdown:before, .countdown:after {
+        display: none;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .mobile-menu {
+        display: block;
+    }
+
+    header li {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+    h1{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .countdown {
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .countdown span {
+        font-size: 14px;
+    }
+
+    .countdown .day {
+        padding-right: 5px;
+    }
+
+    .countdown .hour, .countdown .minute {
+        padding-right: 10px;
+    }
+
+    .countdown .second {
+        margin-left: -16px;
+    }
+
+    .countdown .minute:after, .countdown .hour:after {
+        right: -8px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .upload {
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .form {
+        margin: 10px auto;
+    }
+
+    .overlay {
+        padding: 0 10px;
+    }
+
+    .login-popup, .register-popup {
+        padding: 20px 10px 20px !important;
+        height: 310px;
+
+        form {
+            padding: 0 !important;
+        }
+    }
+
+    .register-popup {
+        height: 395px;
+    }
+
+    form {
+        height: auto !important;
+        padding: 54px 10px 20px !important;
+
+        .left, .center, .right {
+            float: none !important;
+            width: 100% !important;
+            margin-bottom: 13px !important;
+        }
+    }
+
+    select {
+        text-align: center;
+    }
+
+    .footer nav li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .footer {
+        padding: 25px 0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .countdown {
+        background-size: auto 490px;
+        background-position: top right;
+        padding-top: 125px;
+        height: 490px;
+    }
+
+    .game-duration .prize-1, .game-duration .prize-2 {
+        display: block;
+    }
+
+    .game-duration .prize-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .game-duration .circle {
+        margin: 0 auto;
+    }
+
+    .game-duration .winners ul {
+        display: block;
+    }
+
+    .game-duration .winners ul:nth-of-type(1) {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .parallax-1 h2 {
+        padding-top: 68px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .game-duration .winners h2 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .parallax-2 h2 {
+        font-size: 22px;
+        line-height: 28px;
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .countdown {
+        background-position: top right -33px;
+    }
+
+    h1 {
+        font-size: 32px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 6px;
+    }
+
+    header .spar-logo {
+        float: none;
+        margin: 25px auto 10px;
+    }
+
+    header .redbull-race-logo {
+        float: none;
+        margin: 0 auto 10px;
+    }
+
+    header .container > .profile {
+        margin-top: 25px;
+        text-align: center;
+        position: static;
+        background-position: center left 115px;
+    }
+
+    header .container > .profile a {
+        padding-left: 15px;
+    }
+
+    .tutorial .title {
+        font-size: 20px;
+        padding-bottom: 14px;
+    }
+
+    input[type=checkbox].css-checkbox + label.css-label {
+        font-size: 12px !important;
+    }
+
+    .products li {
+        width: 88px;
+        height: 258px;
+    }
+
+    .products h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .products {
+        padding-top: 35px;
+    }
+
+    .profile-popup .own-uploads table {
+        width: 280px;
+    }
+
+    .profile-popup .name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    header .mobile-menu{
+        top: 235px;
+    }
+}

@@ -109,6 +109,12 @@ button, select {
     text-transform: none;
 }
 
+button:focus, select:focus {
+    text-transform: none;
+    outline: 0;
+}
+
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

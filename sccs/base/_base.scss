@@ -44,3 +44,282 @@
         color: #a52a2a;
     }
 }
+
+body {
+    background-color: #0b162f;
+    font-family: $opensans;
+}
+
+main {
+    overflow: hidden;
+}
+
+/* Countdown */
+.countdown {
+    color: #fff;
+    font-weight: 700;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 180px;
+    height: 696px;
+    background: url("../images/soon/soon-background.png") no-repeat center right 180px;
+    background-size: auto 696px;
+    position: relative;
+
+    &:before, &:after {
+        position: absolute;
+        height: 15px;
+        background-color: #fec700;
+        border-top: 5px solid #e01a46;
+        content: " ";
+        width: 100%;
+        top: 204px;
+    }
+
+    &:before {
+        left: -73%;
+    }
+
+    &:after {
+        right: -73%;
+    }
+
+    div {
+        display: inline-block;
+        position: relative;
+        line-height: 58px;
+    }
+
+    span {
+        display: block;
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+        color: #fec700;
+        text-transform: uppercase;
+    }
+
+    .day {
+        padding-right: 15px;
+
+        span {
+            color: #eb1a47;
+        }
+    }
+
+    .hour, .minute {
+        padding-right: 20px;
+    }
+
+    .minute, .hour {
+        &:after {
+            content: ":";
+            position: absolute;
+            right: -12px;
+            top: -5px;
+        }
+    }
+}
+
+/* Seperator */
+
+.seperator {
+    height: 10px;
+    width: 100%;
+    background-color: #fec700;
+    position: relative;
+    margin-top: 5px;
+
+    &:before, &:after {
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 5px;
+        background-color: #f21a48;
+        top: -5px;
+    }
+
+    &:before {
+        left: -63%;
+    }
+
+    &:after {
+        right: -63%;
+    }
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+
+    > div {
+        display: none;
+    }
+}
+
+/* Popups */
+
+.register-popup, .login-popup {
+    margin: 35px auto 0;
+    padding: 59px 100px 0;
+    text-align: center;
+
+    .form-control {
+        margin-bottom: 13px;
+    }
+
+    [type="submit"] {
+        margin-top: 38px;
+    }
+
+    a {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.login-popup {
+    height: 395px;
+}
+
+.profile-popup {
+    margin: 35px auto 0;
+    width: 500px;
+    max-width: 100%;
+    min-height: 611px;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 25px;
+
+    .close {
+        width: 25px;
+        height: 23px;
+        background: url("../images/index/close.png") no-repeat center;
+        background-size: contain;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    input {
+        background-color: #d2d5dc;
+        border-radius: 10px;
+        height: 39px;
+        border: 3px solid #000;
+        width: 100%;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.050em;
+        text-align: center;
+        padding: 0 10px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    label {
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    .form-control {
+        .left, .right {
+            width: 160px;
+            float: left;
+        }
+
+        .left {
+            margin-right: 20px;
+        }
+    }
+
+    .name {
+        padding: 70px 20px 0;
+        text-align: center;
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .email {
+        margin: 17px 0 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    form {
+        min-height: 192px;
+        background-color: #d2d5dc;
+        padding: 26px 80px 0;
+    }
+
+    [type="submit"] {
+        width: 179.5px;
+        height: 48px;
+        line-height: 48px;
+        border: 0;
+        background-color: #cc1044;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #fec700;
+        font-size: 24px;
+        letter-spacing: 0;
+        margin: 17px auto;
+        display: block;
+    }
+
+    .own-uploads {
+        padding: 0 10px;
+
+        .title {
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 17px;
+        }
+
+        td {
+            font-size: 14px;
+            padding: 2px 0;
+        }
+
+        table {
+            width: 300px;
+            margin: 15px auto 0;
+            font-weight: 700;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        tr {
+            &:first-child {
+                border-bottom: 1px solid #f21a48;
+
+                td {
+                    color: #f21a48;
+                    font-weight: 400;
+                }
+            }
+
+            &:nth-child(2) {
+                td {
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}

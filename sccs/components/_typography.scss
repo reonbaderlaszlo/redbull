@@ -1,0 +1,32 @@
+/* Typography */
+h2,h3{
+	color: #fff;
+	text-align: center;
+}
+h1{
+	font-size: 39px;
+	text-align: center;
+	letter-spacing: 0.005em;
+	color: #f21a48;
+	text-transform: uppercase;
+	padding-top: 3px;
+	span{
+		font-weight: 700;
+	}
+}
+h2{
+	font-size: 40px;
+	line-height: 48px;
+	span{
+		font-weight: 700;
+	}
+}
+h3{
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	span{
+		display: block;
+		font-weight: 400;
+	}
+}

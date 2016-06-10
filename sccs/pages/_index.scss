@@ -1,0 +1,309 @@
+/* Index */
+.parallax-1 {
+    margin-top: -15px;
+    min-height: 520px;
+    background: transparent;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 140px;
+    }
+
+    .the-end {
+        span {
+            display: block;
+        }
+    }
+}
+
+.game-duration {
+    min-height: 390px;
+    position: relative;
+    background-color: #f21a48;
+
+    h3 {
+        padding-top: 27px;
+    }
+
+    .prize-wrapper {
+        text-align: center;
+        padding: 15px 0 31px;
+    }
+
+    .prize-1, .prize-2 {
+        display: inline-block;
+    }
+
+    .prize-1 {
+        margin-right: 17px;
+    }
+
+    .circle {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 7px solid #fec700;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .prize-1 .circle {
+        background: #fff url("../images/index/prize-1.png") no-repeat right -44px top -22px;
+        background-size: auto 305px;
+    }
+
+    .prize-2 .circle {
+        background: #fff url("../images/index/prize-2.png") no-repeat right -44px top -22px;
+        background-size: auto 246px;
+    }
+
+    .amount {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #fec700;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -50px;
+        font-size: 40px;
+        color: #cc1044;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    figcaption {
+        text-align: center;
+        color: #fec700;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-top: 10px;
+
+        span {
+            display: block;
+            font-weight: 700;
+        }
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    .winners {
+        text-align: center;
+        padding: 31px 0 81px;
+
+        h2 {
+            font-weight: 700;
+        }
+
+        ul {
+            display: inline-block;
+            padding-top: 31px;
+
+            &:nth-of-type(1) {
+                margin-right: 60px;
+            }
+        }
+
+        li {
+            text-align: center;
+            font-size: 18px;
+            line-height: 25px;
+            color: #fec700;
+        }
+    }
+}
+
+.yellow-box {
+    width: 289px;
+    height: 82px;
+    top: -88px;
+    background-color: #fec700;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    position: absolute;
+
+    span {
+        color: #f21a48;
+        font-size: 24px;
+        display: block;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &:before, &:after {
+        position: absolute;
+        content: " ";
+        height: 46px;
+        width: 1000px;
+        background-color: #f21a48;
+        bottom: -6px;
+    }
+
+    &:before {
+        left: -1006px;
+    }
+
+    &:after {
+        right: -1006px;
+    }
+}
+
+.parallax-2 {
+    min-height: 459px;
+    background: transparent;
+    padding-top: 103px;
+    text-align: center;
+
+    a {
+        display: inline-block;
+        width: 139px;
+        height: 139px;
+        border-radius: 50%;
+        margin-top: 25px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .register {
+        background: #f21a48 url("../images/index/register-icon.png") no-repeat center;
+        background-size: auto 68px;
+        margin-right: 17px;
+    }
+
+    .login {
+        background: #fec700 url("../images/index/login-icon.png") no-repeat center;
+        background-size: auto 82px;
+    }
+}
+
+.tutorial {
+    background-color: #fec700;
+    padding: 44px 0 50px;
+
+    .container {
+        padding: 0 205px;
+    }
+
+    .blokk {
+        width: 330px;
+        height: 345px;
+        float: left;
+        background: url("../images/index/blokk.png") no-repeat center;
+        background-size: contain;
+        margin-right: 60px;
+    }
+
+    .tutorial-wrapper {
+        float: left;
+        max-width: 400px;
+    }
+
+    .title {
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+        line-height: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 28px;
+        position: relative;
+
+        &:before {
+            font-size: 14px;
+            text-align: center;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            line-height: 19px;
+            background-color: #f21a48;
+            color: #fff;
+            content: attr(data-line);
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+
+.upload {
+    height: 617px;
+    background: url("../images/index/plane-background.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.products {
+    text-align: center;
+    min-height: 687px;
+    background: transparent;
+    padding-top: 55px;
+
+    ul {
+        display: inline-block;
+        padding-top: 35px;
+    }
+
+    li {
+        display: inline-block;
+        width: 141px;
+        height: 415px;
+        background-size: contain !important;
+        position: relative;
+        margin: 0 17px 125px;
+
+        &:first-child {
+            footer {
+                bottom: -73px;
+            }
+        }
+    }
+
+    .first {
+        background: url("../images/index/redbull-1.png") no-repeat center;
+    }
+
+    .second {
+        background: url("../images/index/redbull-2.png") no-repeat center;
+    }
+
+    .third {
+        background: url("../images/index/redbull-3.png") no-repeat center;
+    }
+
+    .fourth {
+        background: url("../images/index/redbull-4.png") no-repeat center;
+    }
+
+    footer {
+        color: #fff;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -92px;
+    }
+
+    span {
+        display: block;
+        font-weight: 700;
+    }
+}

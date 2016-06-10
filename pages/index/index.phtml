@@ -1,5 +1,149 @@
 <?php echo $header; ?>
+<!-- Main Content -->
 <main>
-	
+	<div class="seperator"></div>
+	<section class="parallax-1" data-parallax="scroll" data-image-src="/<?php echo $this->config->rootDir; ?>/upload/images/parallax/parallax-1.jpg">
+		<h2>Vásároljon legalább 2 db 250 ml-es Red Bull terméket, <span>és töltse fel a vásárlást igazoló blokk adatait!</span></h2>
+		<h2 class="the-end is-hidden"><span>Játékunk véget ért.</span>A nyertesek listáját 2016. június 23-án tesszük közzé.</h2>
+	</section>
+	<section class="game-duration">
+		<a name="nyeremenyjatek"></a>
+		<div class="yellow-box">
+			A játék időtartama:
+			<span>2016. Június 16-22.</span>
+		</div>
+		<h3>Ha most velünk játszik, nyerhet!<span>Nyereményeink:</span></h3>
+		<div class="prize-wrapper">
+			<figure class="prize-1">
+				<div class="circle">
+					<div class="amount">x<span>10</span></div>
+				</div>
+				<figcaption>Red Bull<span>Air Race Óra</span></figcaption>
+			</figure>
+			<figure class="prize-2">
+				<div class="circle">
+					<div class="amount">x<span>10</span></div>
+				</div>
+				<figcaption>Red Bull<span>Racing Táska</span></figcaption>
+			</figure>
+		</div>
+		<div class="winners is-hidden">
+			<h2>Gratulálunk nyerteseinknek</h2>
+			<ul>
+				<li>Erdeti tünde</li>
+				<li>Szőke Barna</li>
+				<li>Veress Piroska</li>
+				<li>Búza Virág</li>
+				<li>Gipsz Jakab</li>
+				<li>Kalkuttai Szent Teréz</li>
+				<li>Kóbor János</li>
+				<li>Kossuth Lajos</li>
+				<li>Balázs Pali</li>
+				<li>Kukorica János</li>
+			</ul>
+			<ul>
+				<li>Erdeti tünde</li>
+				<li>Szőke Barna</li>
+				<li>Veress Piroska</li>
+				<li>Búza Virág</li>
+				<li>Gipsz Jakab</li>
+				<li>Kalkuttai Szent Teréz</li>
+				<li>Kóbor János</li>
+				<li>Kossuth Lajos</li>
+				<li>Balázs Pali</li>
+				<li>Kukorica János</li>
+			</ul>
+		</div>
+	</section>
+	<section class="parallax-2" data-parallax="scroll" data-image-src="/<?php echo $this->config->rootDir; ?>/upload/images/parallax/parallax-2.jpg">
+		<h2>A játékban való részvételhez<br><span>regisztráljon</span> vagy <span>lépjen be</span>!</h2>
+		<a href="#regisztracio" class="register"></a>
+		<a href="#belepes" class="login"></a>
+	</section>
+	<section class="tutorial">
+		<div class="container">
+			<div class="blokk"></div>
+			<div class="tutorial-wrapper">
+				<div class="title">A kódfeltöltés folyamata</div>
+				<ul>
+					<li data-line="1">Lépjen be és regisztráljon.</li>
+					<li data-line="2">Ezt követően írja be a blokk alján található, maximum 10 számjegyből álló TRSZ számot.</li>
+					<li data-line="3">Írja be a TRSZ alatt található mezőbe a blokk alján található AP kódot (A01234567)</li>
+					<li data-line="4">Töltse ki a vásárlás dátuma mezőt.</li>
+					<li data-line="5">A véglegesítéshez ellenőrizze az adatokat, fogadja el a játékszabályzatot, majd kattintson a Feltöltés gombra.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="upload clear">
+		<a name="blokkfeltoltes"></a>
+		<form method="post" class="form">
+			<div class="form-control first clear">
+				<div class="left">
+					<label for="t-number">Trsz Szám</label>
+					<input id="t-number" type="text">
+				</div>
+				<div class="right">
+					<label for="ap-code">AP Kód</label>
+					<input id="ap-code" type="text">
+				</div>
+			</div>
+			<div class="form-control second clear">
+				<div class="left">
+					<input type="text" value="2016" readonly>
+				</div>
+				<div class="center">
+					<label for="date">Dátum</label>
+					<select id="date">
+						<option value="">Szeptember</option>
+						<option value="">Szeptember</option>
+						<option value="">Szeptember</option>
+						<option value="">Szeptember</option>
+						<option value="">Szeptember</option>
+					</select>
+				</div>
+				<div class="right">
+					<select>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">20</option>
+						<option value="">24</option>
+						<option value="">31</option>
+					</select>
+				</div>
+			</div>
+			<div class="checkbox">
+				<input type="checkbox" id="checkbox" class="css-checkbox"><label for="checkbox" class="css-label">Elfogadom az <a href="#">Adatkezelési nyilatkozatot.</a></label>
+			</div>
+			<input type="submit" value="Feltöltés">
+			<p>Felhívjuk szíves figyelmét, hogy hibásan megadott vagy valótlan adatok megadása esetén a blokk feltöltés nem érvényes.</p>
+		</form>
+	</section>
+	<section class="products" data-parallax="scroll" data-image-src="/<?php echo $this->config->rootDir; ?>/upload/images/parallax/parallax-3.png">
+		<a name="termekek"></a>
+		<h2>A játékben résztvevő termékek:</h2>
+		<ul>
+			<li class="first">
+				<footer>
+					RED BULL<span>ENERGIAITAL</span>250 ML
+				</footer>
+			</li>
+			<li class="second">
+				<footer>
+					RED BULL<span>sugarfree</span><span>ENERGIAITAL</span>250 ML
+				</footer>
+			</li>
+			<li class="third">
+				<footer>
+					RED BULL<span>vörösáfonya</span><span>ENERGIAITAL</span>250 ML
+				</footer>
+			</li>
+			<li class="fourth">
+				<footer>
+					RED BULL<span>kékáfonya</span><span>ENERGIAITAL</span>250 ML
+				</footer>
+			</li>
+		</ul>
+	</section>
 </main>
 <?php echo $footer; ?>
